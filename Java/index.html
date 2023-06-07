@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graus Fahrenheit</title>
+    <style>
+
+        body {
+            font-family: Roboto;
+            background: -webkit-linear-gradient(to left, #2c4553, #51a0aa);
+            background: linear-gradient(to left, #743bcf, #257583);
+            }
+
+        #container{
+            margin: 0 auto;
+            width: auto;
+            display: table;
+            text-align: center;
+        }
+
+        #convert {
+            margin-top:2%;
+            background-color: #26cea4;
+        }
+        #clear {
+            margin-top:2%;
+            background-color: #25b19e;
+        }
+
+        #convert:hover {
+            background-color: #413fac;
+        }
+        h1 {
+            font-family: sans-serif;
+            color: #a4b4c0;
+        }
+        input {
+            display: block;
+            padding: 10px;
+            margin-top: 10px;
+            font-size: 2em;
+            color: #5af49a;
+            font-family: cursive, sans-serif;
+        }
+        ::-webkit-input-placeholder {
+            color: #1fd41f;
+        }
+        :-moz-placeholder { /* Firefox 18- */
+            color: #1b0779;  
+        }
+        ::-moz-placeholder {  /* Firefox 19+ */
+            color: #259942;  
+        }
+        :-ms-input-placeholder {  
+            color: #4586c2;  
+        }
+        button {
+            padding: 10px;
+            font-size: 1.2em;
+            color: #3b1f1f;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Temperature Converter</h1>
+
+        <input type="text" id="fahrenheit" placeholder="Fahrenheit" name="f" value="" />
+
+        <input type="text" id="celsius" placeholder="Celsius" name="c" value="" />
+
+        <button id="convert">Convert!</button>
+        <button id="clear">Reset</button>
+    </div>
+    <script src="conversor.js"></script>
+</body>
+</html>
